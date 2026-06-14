@@ -10,13 +10,6 @@ The system demonstrates **production-style ML engineering practices**, including
 
 ---
 
-## 🚀 Live Demo  
-
-🌐 Web App: https://networksecurity-h4hsc3bph3fmevfq.centralus-01.azurewebsites.net  
-📦 Docker Hub: https://hub.docker.com/r/raw9k/network-security-app  
-
----
-
 ## ⚙️ Features
 
 - **Training Pipeline**: Retrain the phishing detection model via API (`/train`).  
@@ -58,28 +51,6 @@ The system demonstrates **production-style ML engineering practices**, including
 - Docker (optional, for containerized deployment)  
 - MongoDB instance *(only required if you want retraining from raw data ingestion)*  
 
-### Installation
-
-```bash
-git clone https://github.com/raw9k/network-security-system.git
-cd network-security-system
-pip install -r requirements.txt
-```
-### Run Locally
-```bash
-uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-```
-Now you can access the system:
-
-API Docs → http://127.0.0.1:8000/docs
-
-Home Page → http://127.0.0.1:8000/
-
-### 🐳 Docker Deployment
-Build and run the Docker container:
-```bash
-docker build -t network-security-system .
-docker run -p 8000:8000 network-security-system
 ```
 ### 📊 Example Workflow
 
